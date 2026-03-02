@@ -138,20 +138,20 @@ const closeSearch = document.querySelector('.close-search');
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 
-if (searchBtn) {
+if (searchBtn && searchOverlay && searchInput) {
     searchBtn.addEventListener('click', () => {
         searchOverlay.classList.add('active');
         searchInput.focus();
     });
 }
 
-if (closeSearch) {
+if (closeSearch && searchOverlay) {
     closeSearch.addEventListener('click', () => {
         searchOverlay.classList.remove('active');
     });
 }
 
-if (searchInput) {
+if (searchInput && searchResults) {
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase();
         searchResults.innerHTML = '';
