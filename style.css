@@ -67,7 +67,9 @@ h6 {
     background: transparent !important;
     transition: var(--transition);
     border-bottom: 1px solid transparent;
-    z-index: 1000;
+    z-index: 99999 !important;
+    /* Force to top */
+    pointer-events: auto !important;
 }
 
 .navbar.scrolled {
