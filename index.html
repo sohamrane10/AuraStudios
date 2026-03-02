@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Studios | Fine Art Photography</title>
+    <meta name="description"
+        content="Aura Studios captures moments that last a lifetime. Minimalist, premium, and professional photography for your most precious moments.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.jpg" alt="Aura Logo" class="nav-logo">
+                AURA STUDIOS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-dark btn-sm rounded-circle px-2" id="searchBtn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1493863641943-9b6899d18d41?auto=format&fit=crop&q=80&w=2000"
+            class="hero-bg-img" alt="Background">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <span class="text-accent text-uppercase letter-spacing-2 mb-3 d-block animate-in"
+                        style="--delay: 1">Fine Art Photography</span>
+                    <h1 class="display-3 mb-4 fw-bold animate-in" style="--delay: 2">
+                        Capturing the <br> <span class="font-serif italic text-accent">Soul of Moments.</span>
+                    </h1>
+                    <p class="lead mb-5 opacity-75 animate-in" style="max-width: 600px; --delay: 3">
+                        Professional photography studio specializing in weddings, portraits, and fine art.
+                        We don't just take pictures; we craft timestamps for your soul.
+                    </p>
+                    <div class="d-flex gap-3 animate-in" style="--delay: 4">
+                        <a href="#portfolio" class="btn btn-aura btn-aura-primary">View Portfolio</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-aura">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-line"></div>
+    </section>
+
+    <!-- Portfolio Section with Filter -->
+    <section id="portfolio" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-in">
+                <h2 class="display-5 fw-bold mb-4 section-title">Our Work</h2>
+                <div class="d-flex justify-content-center flex-wrap gap-2 mt-2">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wedding">Wedding</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid" id="gallery">
+                <!-- Data will be populated by JS -->
+            </div>
+
+            <div class="text-center mt-5 animate-in">
+                <a href="gallery.html" class="btn btn-outline-dark btn-aura">Explore More (30+ Projects)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-in">
+                <h2 class="fw-bold section-title">Professional Services</h2>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4 animate-in" style="--delay: 1">
+                    <div class="service-card text-center">
+                        <div class="mb-4 text-accent fs-1"><i class="bi bi-camera-reels"></i></div>
+                        <h4 class="fw-bold mb-3">Weddings</h4>
+                        <p class="text-muted">Capturing every emotional milestone of your big day with elegance and
+                            cinematic flair.</p>
+                        <a href="weddings.html"
+                            class="btn btn-link text-accent text-decoration-none fw-bold mt-auto">Details →</a>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-in" style="--delay: 2">
+                    <div class="service-card text-center">
+                        <div class="mb-4 text-accent fs-1"><i class="bi bi-calendar-event"></i></div>
+                        <h4 class="fw-bold mb-3">Events</h4>
+                        <p class="text-muted">High-energy coverage for corporate events and private parties that tells
+                            the full story.</p>
+                        <a href="events.html"
+                            class="btn btn-link text-accent text-decoration-none fw-bold mt-auto">Details →</a>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-in" style="--delay: 3">
+                    <div class="service-card text-center">
+                        <div class="mb-4 text-accent fs-1"><i class="bi bi-person-bounding-box"></i></div>
+                        <h4 class="fw-bold mb-3">Portraits</h4>
+                        <p class="text-muted">Showcasing your authentic personality through fine-art portraiture and
+                            creative lighting.</p>
+                        <a href="portraits.html"
+                            class="btn btn-link text-accent text-decoration-none fw-bold mt-auto">Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="animate-in pb-5">
+        <div class="container text-center">
+            <h3 class="fw-bold mb-4">AURA STUDIOS</h3>
+            <div class="mb-4 d-flex flex-column gap-2 opacity-75 small">
+                <p class="mb-0">VPM's K.G. Joshi College of Arts and N.G.Bedekar College of Commerce (Autonomous), Thane
+                </p>
+                <p class="mb-0">Affiliated to University of Mumbai</p>
+            </div>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="index.html"
+                    class="text-white text-decoration-none small text-uppercase letter-spacing-1">Home</a>
+                <a href="about.html"
+                    class="text-white text-decoration-none small text-uppercase letter-spacing-1">About</a>
+                <a href="contact.html"
+                    class="text-white text-decoration-none small text-uppercase letter-spacing-1">Contact</a>
+                <a href="gallery.html"
+                    class="text-white text-decoration-none small text-uppercase letter-spacing-1">Gallery</a>
+            </div>
+            <p class="opacity-50 small mb-0">&copy; 2026 Aura Studios. Directed by Vishesh Pisal.</p>
+        </div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <button class="close-search">&times;</button>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search projects, services, or blog..." autocomplete="off">
+            <div id="searchResults" class="mt-4"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
