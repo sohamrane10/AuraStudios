@@ -1,6 +1,6 @@
 # Aura Studios | Fine Art Photography Platform
 
-A premium, minimalist web application designed for **Aura Studios**, showcasing the high-fidelity photography and cinematography work of **Vishesh Pisal** and his team.
+A premium, minimalist web application meticulously crafted for **Aura Studios**. This platform showcases the high-fidelity photography and cinematography work of **Vishesh Pisal** and his creative team.
 
 ---
 
@@ -8,77 +8,76 @@ A premium, minimalist web application designed for **Aura Studios**, showcasing 
 
 The application is built using modern web standards to ensure high performance, fluid animations, and a premium aesthetic without the overhead of heavy frameworks.
 
-*   **Structure**: HTML5 (Semantic & SEO Optimized)
-*   **Styling**: 
-    *   Custom CSS3 (Glassmorphism, CSS Variables, Flexbox/Grid)
-    *   Bootstrap 5.3 (Responsive Grid System & Layout Utilities)
-*   **Logic & Interactivity**: Vanilla JavaScript (ES6+)
-*   **Typography**: 
-    *   `Outfit` (Modern, clean sans-serif for UI)
-    *   `Playfair Display` (Elegant serif for artistic emphasis)
-*   **Icons**: Bootstrap Icons (SVG Based)
-*   **Branding**: Custom Photography Icon System
+*   **Core Structure**: 
+    *   **HTML5**: Semantic tags for accessibility and SEO.
+    *   **Bootstrap 5.3**: Utilized for its robust mobile-first grid system and standardized layout utilities.
+*   **Aesthetics & Styling**: 
+    *   **CSS3 (Vanilla)**: High-performance styling featuring Glassmorphism, CSS Variables (:root), and Flexbox/Grid.
+    *   **Modern Web Typography**: `Outfit` (Sans-serif) for functional UI and `Playfair Display` (Serif) for elegance.
+*   **Logic & Interactivity**: 
+    *   **Vanilla JavaScript (ES6+)**: Custom-built engine for gallery rendering, search algorithms, and state management.
+    *   **Intersection Observer API**: Powering staggered, high-fidelity entry animations as users scroll.
+*   **Iconography**: `Bootstrap Icons` (SVG-based) for crisp rendering on all retina displays.
 
 ---
 
 ## ✨ Key Features
 
-*   **Dynamic Portfolio Gallery**: A JavaScript-driven gallery that renders projects dynamically from a centralized data object.
-*   **Seamless Filtering**: Staggered, animated project filtering allowing users to switch between Wedding, Portrait, and Event categories.
-*   **Aura Signature Effect**: A custom mouse-follow blur effect that creates a dynamic "glow" behind the content as the user interacts.
-*   **Premium Navigation**: A sticky navbar that transitions from a minimal transparent state to a sophisticated glassmorphism (backdrop-blur) finish upon scrolling.
-*   **Real-time Search**: An integrated search overlay that provides instant results for projects, services, and team details.
-*   **Consistent Branding**: Fully branded for **Vishesh Pisal** and affiliated with **VPM's K.G. Joshi & N.G. Bedekar College (S.S.P.M.), Thane**.
+*   **Flat Architecture**: Optimized for rapid deployment and individual file uploads (GitHub, Vercel, Netlify).
+*   **Dynamic Portfolio Gallery**: A JavaScript-driven gallery that renders over 30+ projects dynamically from a centralized data object.
+*   **Universal Search Experience**: An integrated, full-screen search overlay that filters through projects and services in real-time.
+*   **Aura Signature Glow**: A bespoke interactive mouse-follow blur effect (automatically disabled on mobile for performance).
+*   **Premium Glassmorphism**: Navigation bar that adapts from transparent to a blur-background state upon scrolling.
+*   **Mobile-First Design**: Precision-tuned media queries ensure a flawless experience on everything from ultra-wide monitors to handheld devices.
 
 ---
 
 ## 🛠️ How It Was Built
 
-1.  **Design System First**: Established a robust CSS Variable architecture (`:root`) to handle colors, transitions, and timing functions site-wide.
-2.  **Animation Staggering**: Implemented a custom `--delay` system using CSS custom properties combined with `intersection observer` style animations for a premium "entrance" feel.
-3.  **Modular Logic**: JavaScript was kept modular, handling the gallery rendering, search algorithms, and UI state transitions (like the navbar scroll effect) independently.
-4.  **Responsive Engineering**: Leveraged Bootstrap’s grid system while overwriting its components with custom-engineered CSS to maintain a bespoke "high-end" look across mobile, tablet, and desktop.
+The development of Aura Studios focused on **Minimalism** and **Performance**:
+
+1.  **Architecture**: We transitioned from a nested folder structure to a "Flat Architecture" to simplify asset pathing and ensure 100% compatibility with GitHub individual file uploads.
+2.  **Performance Optimization**: By avoiding heavy JS frameworks (React/Vue), the site achieves near-instant load times while maintaining complex animations.
+3.  **Visual Consistency**: Established a robust CSS Variable system to manage the "Aura Gold" (`#C5A161`) and "Deep Onyx" (`#0F0F0F`) palette across 38+ pages.
+4.  **Responsive Engineering**: Every component was stressed-tested for mobile usability, including stacking buttons and resizing hero typography to prevent overflow on small screens.
 
 ---
 
-## 📖 How to Use
+## 📂 Project Structure
 
-### Viewing Locally
-1.  **Clone/Download** the repository to your local machine.
-2.  Open `index.html` in any modern web browser (Chrome, Firefox, Safari, Edge).
-3.  **No Server Required**: Since the app uses Vanilla JS and standard CSS, it runs perfectly as a static site without any build steps or npm commands.
+Following the user's requirement for flat deployment, all core assets are located in the root directory:
+
+```text
+├── index.html        # Homepage & Hero Section
+├── about.html        # Team & History
+├── contact.html      # Inquiry Portal
+├── weddings.html     # Service Detail (Flat)
+├── gallery.html      # All Individual Projects
+├── style.css         # Unified Design System (Mobile Responsive)
+├── script.js         # Core Logic & Search Engine
+└── logo.jpg          # Master Branding Asset & Favicon
+```
+
+---
+
+## 🌍 Hosting & Deployment
+
+The platform is managed through a professional **GitHub-to-Vercel** pipeline:
+1.  **Version Control**: All code, assets, and documentation were first established and managed via [GitHub](https://github.com/).
+2.  **Edge Deployment**: The final application is deployed on [Vercel](https://vercel.com/), ensuring high-speed global delivery and continuous integration (CI/CD) for every update.
+
+---
+
+## 📖 Using the Platform
 
 ### Navigation
-*   **Explore**: Scroll down the homepage to see the featured portfolio and service cards.
-*   **Filter**: Click on the category buttons in the "Our Work" section to instantly see specific types of projects.
-*   **Search**: Click the search icon in the top-right navbar to open the search portal. Type keywords like "Wedding", "Vishesh", or "Events".
-*   **Book**: Use the **Contact** page to fill out the inquiry form, which is pre-configured for Aura Studios.
+*   **Portfolio**: Filter by category (Wedding, Events, Portraits) to see specific work.
+*   **Search Engine**: Click the magnifying glass in the navbar and type keywords like "Portrait" or "Team".
+*   **Mobile Optimizations**: The site includes a custom-designed hamburger menu for one-handed use and automatically disables heavy desktop effects for battery efficiency.
 
 ---
 
-## 🌐 Deployment Steps
-
-Since **Aura Studios** is a static web application, it can be deployed for free on several modern hosting platforms in under 2 minutes.
-
-### Option 1: Vercel (Recommended)
-1.  Sign up for a free [Vercel](https://vercel.com/) account.
-2.  Install the Vercel CLI: `npm i -g vercel`.
-3.  Run `vercel` in the project root directory and follow the prompts.
-4.  **Alternatively**: Connect your GitHub repository to Vercel for automatic deployments on every "push".
-
-### Option 2: Netlify
-1.  Go to [Netlify](https://www.netlify.com/) and log in.
-2.  Drag and drop the entire `AuraStudios` folder into the Netlify "Sites" dashboard.
-3.  Your site will be live instantly with a custom URL.
-
-### Option 3: GitHub Pages
-1.  Push your code to a GitHub repository.
-2.  Go to **Settings > Pages** in your repository.
-3.  Select the `main` branch and `/root` directory.
-4.  Click **Save**. Your site will be available at `username.github.io/repo-name`.
-
----
-
-**Developed by**: Vishesh Pisal  
-**Affiliation**: VPM’s K.G. Joshi & N.G. Bedekar College (Autonomous), Thane  
+**Developed & Directed by**: Vishesh Pisal  
+**Affiliation**: VPM’s K.G. Joshi College of Arts and N.G.Bedekar College of Commerce (Autonomous), Thane  
+**University**: Affiliated to University of Mumbai  
 **&copy; 2026 Aura Studios**
